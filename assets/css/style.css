@@ -16,6 +16,16 @@ body {
 }
 
 /* ==============common=================== */
+
+/* ke thua the font family */
+input,
+textarea,
+section,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .container {
   width: 1170px;
   min-width: calc(100% -48px);
@@ -638,7 +648,7 @@ a {
 
 /* ==============appointment=================== */
 .appointment {
-  margin: 85px;
+  margin-top: 85px;
 }
 
 .appointment__inner {
@@ -663,4 +673,128 @@ a {
 
 .appointment__btn {
   margin-top: 38px;
+}
+
+/* ==============footer=================== */
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: #10375c;
+  /* ke thua cho toan bo footer */
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  /* font-weight: 400; */
+  line-height: 1.75; /* 175% */
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__list {
+  margin: 20px 0 28px;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  margin: 20px 0 28px;
+  column-gap: 10px;
+  display: flex;
+}
+
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-form__input {
+  background: transparent;
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  outline: none;
+  color: #fff;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
+}
+
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+  border: none;
+}
+
+.footer-form__submit:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* ve dong ke */
+.footer__copyright {
+  border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+  padding: 28px 0 42px;
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86; /* 185.714% */
 }
