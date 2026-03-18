@@ -27,8 +27,8 @@ button {
 }
 
 .container {
-  width: 1170px;
-  min-width: calc(100% - 48px);
+  max-width: 1170px;
+  width: calc(100% - 48px);
   margin: 0 auto;
 }
 
@@ -188,7 +188,6 @@ a {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
-  width: 468px;
   margin-top: 22px;
   margin-bottom: 38px;
 }
@@ -196,6 +195,7 @@ a {
 .header-bottom .booking-item {
   display: flex;
   align-items: center;
+  column-gap: 38px;
 }
 .header-bottom .booking__online {
   color: #fff;
@@ -215,10 +215,8 @@ a {
 .header-bottom .booking__call {
   color: #fff;
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.67; /* 166.667% */
-  margin-left: 38px;
+  text-align: center;
 }
 
 .hero__images {
@@ -275,7 +273,7 @@ a {
 .service-item {
   padding: 21px;
   display: flex;
-  width: 470px;
+  width: 100%;
   border-radius: 10px;
   background: #fff;
   transition: 0.25s;
@@ -797,4 +795,29 @@ a {
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
+}
+
+/* FIX OVERFLOW GLOBAL */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  height: auto;
+}
+
+.section-desc,
+.booking__desc {
+  max-width: 100%;
+}
+
+.service-item {
+  width: 100%;
+}
+
+.blog-item,
+.blog-item__thumb {
+  width: 100%;
+  max-width: 100%;
 }
