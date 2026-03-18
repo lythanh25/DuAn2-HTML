@@ -18,6 +18,7 @@
   }
   .header__logo {
     position: absolute;
+    top: 50%;
     left: 50%;
     translate: -50% -50%; /*căn vào đúng giữa chứ không phải căn theo góc của logo*/
   }
@@ -133,6 +134,35 @@
   .service-item {
     width: 90%;
     text-align: start;
+  }
+
+  /* work_list */
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* about */
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .about__media {
+    width: 100%;
+  }
+  /* an anh small */
+  .about__img--small {
+    display: none;
+  }
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+
+  .about-content {
+    width: 90%;
+    text-align: center;
   }
 }
 /* Tablet */
