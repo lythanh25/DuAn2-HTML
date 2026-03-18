@@ -94,6 +94,46 @@
     display: block;
     font-size: 2rem;
   }
+
+  /* Khối hero */
+  .header-bottom {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .booking {
+    order: 2;
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .booking-item {
+    justify-content: center;
+  }
+
+  /* khoi service */
+  .service__row {
+    flex-direction: column;
+  }
+
+  .service__img {
+    width: 100%;
+    row-gap: 20px;
+  }
+
+  .service__list {
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    text-align: start;
+  }
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
