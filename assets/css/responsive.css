@@ -164,6 +164,27 @@
     width: 90%;
     text-align: center;
   }
+
+  /* team-list */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  /* can giua anh */
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+
+  /* install */
+  .install__img {
+    display: none;
+  }
+
+  .install__content {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
